@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Pastel pink to muted mauve gradient */
+    color: #585858; /* Dark gray for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: #99606e; /* Muted mauve for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    color: #662c39; /* Deep maroon on hover */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.applications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.application-item {
+    background-color: rgba(255, 255, 255, 0.148);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.application-item h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.application-item p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.no-applications {
+    font-size: 1.2rem;
+    color: #000000;
+}

@@ -1,0 +1,149 @@
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #ffc5d3, #99606e); /* Soft pastel pink to muted mauve gradient */
+        color: #585858;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background-color: #ffc5d3; /* More pastel pink for the container */
+        border-radius: 10px;
+        padding: 30px 40px;
+        width: 90%;
+        max-width: 600px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Slightly larger header */
+        margin-bottom: 20px;
+        color: #662c39; /* Deep maroon for heading */
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        color: #99606e; /* Muted mauve for links */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #585858; /* White on hover */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    label {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #662c39; /* Dark maroon for labels */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly darker input background */
+        color: #585858;
+        transition: all 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    textarea:focus {
+        background-color: rgba(255, 255, 255, 0.4); /* Lighter background when focused */
+    }
+
+    button {
+        background: linear-gradient(135deg, #1b0606, #5e5b5c); /* Mauve to red gradient */
+        border: none;
+        color: #e0e0e0;
+        font-size: 1rem;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background: linear-gradient(135deg, #5e5b5c, #1b0606); /* Reverse the gradient on hover */
+    }
+
+    ul.message-history {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .message-item {
+        background: rgba(255, 255, 255, 0.1); /* Slight background for message items */
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .reply-form {
+        margin-top: 20px;
+    }
+
+    .reply-form textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #585858;
+        transition: all 0.3s;
+    }
+
+    .reply-form textarea:focus {
+        background-color: rgba(255, 255, 255, 0.4); /* Lighter focus background */
+    }
+
+    .reply-form button {
+        background: linear-gradient(135deg, #1b1114, #1b0606);
+        border: none;
+        color: #585858;
+        font-size: 1rem;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .reply-form button:hover {
+        background: linear-gradient(135deg, #1b0606, #1b1114); /* Reverse gradient on hover */
+    }
+
+    .no-messages {
+        color: #585858; /* Softer pink for no messages text */
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }

@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Soft pastel pink to muted mauve gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem; /* Larger font size for header */
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #662c39; /* Deep maroon/navy for the navbar */
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #ffc5d3; /* Soft pastel pink for navbar links */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff; /* White on hover for contrast */
+}
+
+.dashboard-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background for contrast */
+    border-radius: 12px;
+    padding: 40px 50px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    text-align: center;
+    margin-top: 120px; /* Increased margin for spacing from navbar */
+    background-color: #ffc5d3; /* More of the soft pastel pink in the container */
+}
+
+.dashboard-container h1 {
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 20px;
+    color: #662c39; /* Deep maroon for the main heading */
+}
+
+.dashboard-container h2 {
+    font-size: 1.8rem;
+    color: #662c39; /* Deep maroon for subheading */
+}
+
+.welcome-message {
+    margin-bottom: 30px;
+    color: #662c39; /* Use dark red for the welcome message */
+}
+
+a {
+    color: #662c39; /* Deep maroon for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block;
+    margin: 10px 0;
+}
+
+a:hover {
+    color: #fff; /* White on hover */
+}
+
+.logout-link {
+    color: #330c15; /* Darker maroon for the logout link */
+    font-size: 1.1rem;
+}
+
+.logout-link:hover {
+    color: #ea1313; /* Subtle red highlight on hover */
+}

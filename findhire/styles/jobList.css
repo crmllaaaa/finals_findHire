@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Soft pastel pink to muted mauve gradient */
+    color: #585858; /* Dark gray text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent navbar background */
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: #99606e; /* Muted mauve for navbar links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    color: #585858; /* Dark gray on hover */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent content area */
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 20px; /* Add space between navbar and content */
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #662c39; /* Deep maroon for title */
+}
+
+.job-post {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background for job posts */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.job-post h2 {
+    font-size: 1.5rem;
+    color: #662c39; /* Deep maroon for job post titles */
+    margin-bottom: 10px;
+}
+
+.job-post p {
+    font-size: 1rem;
+    color: #585858; /* Dark gray for job post description */
+    margin-bottom: 10px;
+}
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea, input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Darker input background */
+    color: #fff;
+    transition: all 0.3s;
+}
+
+textarea:focus, input[type="file"]:focus {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter background when focused */
+}
+
+button {
+    background: linear-gradient(135deg, #99606e, #662c39); /* Muted mauve to deep maroon gradient */
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    width: 100%; /* Makes the button full-width */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #662c39, #99606e); /* Reverse gradient on hover */
+}

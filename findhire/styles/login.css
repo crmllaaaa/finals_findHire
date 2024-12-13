@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Soft pastel pink to muted mauve gradient */
+    color: #585858; /* Dark gray text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background for the container */
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #662c39; /* Deep maroon for the heading */
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ff3333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #662c39; /* Dark maroon for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background */
+    color: #585858; /* Dark gray text for inputs */
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter focus effect */
+}
+
+button {
+    background: linear-gradient(135deg, #99606e, #662c39); /* Muted mauve to deep maroon gradient */
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #662c39, #99606e); /* Reverse gradient on hover */
+}
+
+a {
+    color: #99606e; /* Muted mauve for the link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #662c39; /* Deep maroon on hover */
+}

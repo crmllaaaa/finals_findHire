@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Soft pastel pink to muted mauve gradient */
+    color: #585858;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #5329b1;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.container {
+    background-color: #ffc5d3; /* More pastel pink for the container */
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #662c39; /* Dark maroon for labels */
+}
+
+input[type="text"],
+textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px; /* Softer rounded edges */
+    outline: none;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background for input fields */
+    color: #585858;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter background on focus */
+}
+
+button {
+    background: linear-gradient(135deg, #1b0606, #5e5b5c); /* Mauve to red gradient */
+    border: none;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5e5b5c, #1b0606); /* Reverse gradient on hover */
+}
+
+.back-link {
+    margin-top: 15px;
+}
+
+.back-link a {
+    color: #99606e; /* Muted mauve for the back link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.back-link a:hover {
+    color: #585858; /* Hover color */
+}

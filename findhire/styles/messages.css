@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Pastel pink to muted mauve gradient */
+    color: #585858; /* Dark gray text for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #662c39; /* Deep maroon for header border */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #99606e; /* Muted mauve for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #662c39; /* Deep maroon on hover */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #662c39; /* Deep maroon for labels */
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #585858; /* Dark gray for input text */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background for inputs */
+}
+
+button {
+    background: linear-gradient(135deg, #99606e, #662c39); /* Muted mauve to deep maroon gradient */
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #662c39, #99606e); /* Reverse gradient on hover */
+}
+
+.message-list {
+    margin-top: 20px;
+}
+
+.message-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message-item p {
+    color: #585858; /* Dark gray text for message content */
+}
+
+.message-item form {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-item textarea {
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    color: #585858;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background for reply textareas */
+}
+
+.message-item .reply-btn {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #99606e, #662c39); /* Consistent button gradient */
+}

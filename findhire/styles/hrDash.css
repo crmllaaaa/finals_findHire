@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5d3, #99606e); /* Soft pastel pink to muted mauve gradient */
+    color: #585858;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #99606e; /* Change the border to match the theme */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #99606e; /* Muted mauve for nav links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #585858; /* Text color on hover */
+}
+
+.container {
+    background-color: #ffc5d3; /* More pastel pink for the container */
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #662c39; /* Deep maroon for the subheading */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    background: rgba(0, 0, 0, 0.2); /* Slightly darker background for list items */
+    padding: 10px;
+    border-radius: 5px;
+    color: #585858; /* Text color for list items */
+    margin: 5px 0;
+}
+
+ul li strong {
+    color: #99606e; /* Muted mauve for strong text */
+}
+
+.logout-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #99606e, #662c39); /* Gradient from mauve to deep maroon */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.logout-link:hover {
+    background: linear-gradient(135deg, #662c39, #99606e); /* Reverse the gradient on hover */
+}
